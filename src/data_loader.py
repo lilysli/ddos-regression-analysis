@@ -7,5 +7,6 @@ def uni_load_flow_data(csv_path):
     df = pd.read_csv(csv_path)
     df.columns = df.columns.str.strip()
     df_ddos = df[df['Label'] == 'DDoS']
+
     return df_ddos
 
